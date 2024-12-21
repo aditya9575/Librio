@@ -1,0 +1,203 @@
+/* Students Component Styling */
+.students {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: #007bff; /* Brand color */
+}
+
+.header button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+  background-color: #0056b3;
+}
+
+/* Student Form */
+.student-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.student-form input,
+.student-form button {
+  flex: 1 1 200px; /* Responsive sizing */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.student-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.student-form button:hover {
+  background-color: #218838;
+}
+
+/* Students List */
+.students-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px;
+}
+
+/* Student Card */
+.student-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.student-card h3 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.student-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Rental History */
+.rentals-history {
+  margin-top: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.rentals-history h4 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Actions Section */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.actions button {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:first-child:hover {
+  background-color: #e0a800;
+}
+
+.actions button:last-child {
+  background-color: #dc3545;
+}
+
+.actions button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .student-form {
+    flex-direction: column;
+  }
+
+  .student-form input,
+  .student-form button {
+    flex: 1 1 100%; /* Full-width on smaller screens */
+  }
+
+  .student-card h3 {
+    font-size: 1rem;
+  }
+
+  .student-card p {
+    font-size: 0.85rem;
+  }
+
+  .actions button {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .header button {
+    font-size: 0.8rem;
+  }
+
+  .student-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .student-card p {
+    font-size: 0.8rem;
+  }
+}

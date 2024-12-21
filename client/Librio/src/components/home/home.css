@@ -1,0 +1,154 @@
+/* General Styles */
+.home {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Highlights Section */
+.highlights {
+  margin-bottom: 30px;
+}
+
+.highlights h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-align: center;
+}
+
+.updates-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.update-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.update-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.update-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.update-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.update-card small {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.contact-info {
+  font-size: 1rem;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info svg {
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .update-card h3 {
+    font-size: 1rem;
+  }
+
+  .update-card p {
+    font-size: 0.9rem;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .contact-info p {
+    font-size: 0.85rem;
+  }
+}

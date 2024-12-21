@@ -1,0 +1,110 @@
+/* General Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #007bff; /* Highlight color on hover */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Highlight color on hover */
+}
+
+.nav-links a svg {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 1.2rem; /* Adjust icon size */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links by default on smaller screens */
+    flex-direction: column; /* Stack links vertically */
+    background-color: #333; /* Same background as navbar */
+    position: absolute;
+    top: 60px; /* Position below the navbar */
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show links when toggled */
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Add spacing between stacked items */
+  }
+}
+
+@media (max-width: 576px) {
+  .logo a {
+    font-size: 1.2rem; /* Smaller font for the logo */
+  }
+
+  .nav-links a {
+    font-size: 0.9rem; /* Adjust font size for links */
+  }
+
+  .nav-links a svg {
+    font-size: 1rem; /* Smaller icons */
+  }
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}
